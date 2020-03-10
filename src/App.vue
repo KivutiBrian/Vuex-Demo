@@ -1,17 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-sm-12">
+          <input-comp></input-comp>
+          <tasks-comp></tasks-comp>
+        </div>
+        
+      </div>
+    </div>
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import InputComp from './components/Input'
+import TasksComp from './components/Tasks'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    InputComp,
+    TasksComp
   }
 }
 </script>
