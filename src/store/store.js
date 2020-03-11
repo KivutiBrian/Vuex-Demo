@@ -7,10 +7,12 @@ export default new Vuex.Store({
     state:{
         tasks:[
             {
-                title:'Cook'
+                title:'Cook',
+                completed: false
             },
             {
-                title:'Wash'
+                title:'Wash',
+                completed: false
             },
         ]
 
@@ -18,7 +20,8 @@ export default new Vuex.Store({
     mutations:{
         SAVE_TASK(state,payload){
             state.tasks.push({
-                title:payload
+                title:payload,
+                completed: false
             })
         }
 
